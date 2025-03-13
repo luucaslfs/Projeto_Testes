@@ -1,7 +1,7 @@
-# Projeto: Auto-Geração de Testes para APIs REST com IA Generativa
+# Projeto: Estudo Comparativo de Testes Gerados por IA para APIs REST em Diferentes Contextos de Aplicações
 
 ## 📌 Objetivo
-Realizar um **estudo comparativo sobre a eficácia e aplicabilidade de testes gerados por IA em diferentes contextos e escalas de aplicações**. O foco é:
+Realizar um **estudo comparativo sobre a eficácia e aplicabilidade de testes gerados por IA especificamente para APIs REST em diferentes contextos e escalas de aplicações**. O foco é:
 - Analisar casos de uso reais de implementação de testes gerados por IA
 - Comparar abordagens, ferramentas e resultados em diferentes contextos
 - Avaliar vantagens, limitações e fatores críticos de sucesso
@@ -22,19 +22,20 @@ Realizar um **estudo comparativo sobre a eficácia e aplicabilidade de testes ge
 ## 📋 Metodologia
 
 ### **Questões de Pesquisa**
-1. Como a eficácia dos testes gerados por IA varia em diferentes contextos e escalas de aplicação?
-2. Quais fatores contextuais (domínio, tamanho da aplicação, complexidade) influenciam o sucesso da abordagem?
-3. Quais são as melhores práticas e lições aprendidas a partir de implementações reais?
-4. Como se comparam as diferentes ferramentas e abordagens de IA para geração de testes?
+1. Como a eficácia dos testes gerados por IA para APIs REST varia em diferentes contextos e escalas de aplicação?
+2. Quais fatores contextuais (domínio, tamanho da API, complexidade do contrato) influenciam o sucesso da abordagem?
+3. Quais são as melhores práticas e lições aprendidas a partir de implementações reais de testes automatizados de APIs REST via IA?
+4. Como se comparam as diferentes ferramentas e abordagens de IA para geração de testes de APIs REST?
+5. Como os testes gerados por IA se comparam aos testes manuais ou gerados por outras ferramentas específicas para APIs REST?
 
 ### **Framework de Análise**
-| Dimensão             | Aspectos a Analisar                         | Métodos de Avaliação          |
-|----------------------|---------------------------------------------|-------------------------------|
-| **Contexto**         | Domínio, escala, complexidade, tecnologias  | Categorização e análise       |
-| **Abordagem**        | Ferramentas, modelos, métodos de geração    | Análise comparativa           |
-| **Eficácia**         | Cobertura, detecção de bugs, qualidade      | Síntese de métricas reportadas|
-| **Desafios**         | Limitações, obstáculos, pontos de falha     | Análise temática              |
-| **Fatores críticos** | Condições de sucesso, pré-requisitos        | Análise de correlação         |
+| Dimensão             | Aspectos a Analisar                                      | Métodos de Avaliação          |
+|----------------------|----------------------------------------------------------|-------------------------------|
+| **Contexto da API**  | Domínio, escala, complexidade, especificação (REST/OpenAPI) | Categorização e análise    |
+| **Abordagem**        | Ferramentas, modelos, métodos de geração                 | Análise comparativa           |
+| **Eficácia**         | Cobertura de endpoints, validação de respostas, segurança | Síntese de métricas reportadas|
+| **Desafios**         | Limitações com APIs complexas, autenticação, casos de borda | Análise temática          |
+| **Fatores críticos** | Qualidade da documentação, completude da especificação   | Análise de correlação         |
 
 ### **Seleção de Casos**
 - **Critérios de inclusão**:
@@ -43,10 +44,12 @@ Realizar um **estudo comparativo sobre a eficácia e aplicabilidade de testes ge
   - Dados suficientes para análise comparativa
 
 - **Categorias de contexto**:
-  - Microserviços vs. Aplicações monolíticas
+  - APIs de Microserviços vs. APIs de sistemas monolíticos
   - APIs públicas vs. APIs privadas/internas
+  - Diferentes tipos de APIs REST (CRUD simples, complexas com lógica de negócio)
   - Diferentes domínios (finanças, saúde, e-commerce, etc.)
-  - Diferentes escalas (startups, empresas médias, grandes corporações)
+  - Diferentes escalas de APIs (pequenas com poucos endpoints vs. grandes com centenas)
+  - APIs com diferentes níveis de documentação (OpenAPI/Swagger vs. documentação informal)
 
 ### **Coleta de Dados**
 1. **Fontes Acadêmicas**:
@@ -69,9 +72,10 @@ Realizar um **estudo comparativo sobre a eficácia e aplicabilidade de testes ge
 ## 📊 Estrutura do Estudo
 
 ### **1. Revisão do Estado da Arte**
-- Taxonomia de abordagens de geração de testes por IA
-- Evolução histórica e tendências atuais
-- Ferramentas e frameworks disponíveis
+- Taxonomia de abordagens de geração de testes de APIs REST por IA
+- Evolução histórica do teste de APIs REST e integração com IA
+- Ferramentas específicas para teste de APIs (Postman, REST Assured, Karate) e sua integração com IA
+- Abordagens de especificação (OpenAPI, RAML, API Blueprint) e seu impacto na geração de testes
 
 ### **2. Análise de Casos por Contexto**
 - **Pequena Escala**:
@@ -85,14 +89,26 @@ Realizar um **estudo comparativo sobre a eficácia e aplicabilidade de testes ge
   - Arquiteturas complexas e distribuídas
 
 ### **3. Análise Temática**
-- **Fatores Técnicos**: Tipos de testes, cobertura, integração contínua
-- **Fatores Humanos**: Aceitação, adaptação, curva de aprendizado
-- **Fatores Organizacionais**: ROI, mudanças de processo, governança
+- **Fatores Técnicos**: 
+  - Tipos de testes para APIs REST (funcional, segurança, performance, contrato)
+  - Cobertura de endpoints, métodos HTTP e códigos de status
+  - Integração com pipelines CI/CD e DevOps
+- **Fatores Humanos**: 
+  - Aceitação por testadores e desenvolvedores de API
+  - Adaptação de práticas de documentação para facilitar geração de testes
+- **Fatores Organizacionais**: 
+  - ROI em comparação com abordagens tradicionais de teste de API
+  - Mudanças em processos de desenvolvimento de APIs
 
 ### **4. Comparação de Ferramentas e Abordagens**
-- Abordagens baseadas em LLMs (OpenAI, Claude, LLama)
-- Ferramentas específicas para teste (TestGPT, etc.)
-- Frameworks proprietários vs. open source
+- **Abordagens baseadas em modelos de linguagem**:
+  - Uso de LLMs (OpenAI, Claude, LLama) para geração de testes de API
+  - Estratégias de prompt engineering para teste de APIs REST
+  - Processamento de documentação OpenAPI por LLMs
+- **Ferramentas específicas**:
+  - Integrações de IA com Postman, Swagger, REST Assured
+  - Ferramentas dedicadas à geração de testes (TestGPT, RestAI, etc.)
+  - Frameworks proprietários vs. open source para teste de APIs com IA
 
 ---
 
@@ -106,8 +122,11 @@ Realizar um **estudo comparativo sobre a eficácia e aplicabilidade de testes ge
 
 ## 📚 Referências Iniciais
 
-1. Watson, C., et al. (2023). "A Systematic Mapping Study on AI-based Test Case Generation."
-2. Zhang, Y., et al. (2022). "Large Language Models for Software Testing: A Systematic Literature Review."
-3. Arcuri, A. (2023). "Can ChatGPT Generate Tests? A Comparative Study."
-4. Almeida, D., et al. (2022). "Testing Microservices with AI: Challenges and Opportunities."
-5. Dias-Neto, A.C., Travassos, G.H. (2009). "Model-based testing approaches selection for software projects."
+1. Watson, C., et al. (2023). "A Systematic Mapping Study on AI-based Test Case Generation for RESTful APIs."
+2. Zhang, Y., et al. (2022). "Large Language Models for API Testing: A Systematic Literature Review."
+3. Arcuri, A. (2023). "Can ChatGPT Generate REST API Tests? A Comparative Study."
+4. Almeida, D., et al. (2022). "Testing Microservices APIs with AI: Challenges and Opportunities."
+5. Dias-Neto, A.C., Travassos, G.H. (2009). "Model-based testing approaches selection for API projects."
+6. Atlidakis, V., et al. (2019). "Restler: Stateful rest api fuzzing."
+7. Ed-douibi, H., et al. (2018). "Automatic generation of test cases for REST APIs: a specification-based approach."
+8. Martin-Lopez, A., et al. (2021). "Test case generation for REST APIs using GPT models: an empirical study."

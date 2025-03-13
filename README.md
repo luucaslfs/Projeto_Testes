@@ -1,129 +1,113 @@
 # Projeto: Auto-Geração de Testes para APIs REST com IA Generativa
 
 ## 📌 Objetivo
-Desenvolver uma abordagem inovadora de **auto-geração de testes de APIs REST utilizando IA Generativa**. O foco é:
-- Explorar o potencial da IA na criação automática de casos de teste
-- Desenvolver uma metodologia eficiente de geração de testes
-- Documentar o processo e as descobertas técnicas
+Realizar um **estudo comparativo sobre a eficácia e aplicabilidade de testes gerados por IA em diferentes contextos e escalas de aplicações**. O foco é:
+- Analisar casos de uso reais de implementação de testes gerados por IA
+- Comparar abordagens, ferramentas e resultados em diferentes contextos
+- Avaliar vantagens, limitações e fatores críticos de sucesso
 
 ---
 
-## 🛠️ Proposta de Solução
+## 🔍 Proposta de Pesquisa
 
 ### **Visão Geral**
-1. **Seleção de Ferramentas**: Escolher ferramentas de IA Generativa para geração de testes de API.
-2. **Experimentos Práticos**:
-   - Gerar testes automaticamente para diferentes APIs
-   - Validar a qualidade e cobertura dos testes gerados
-3. **Análise Crítica**: Identificar padrões, desafios e potenciais de melhoria no processo de auto-geração.
+1. **Revisão Sistemática da Literatura**: Mapear o estado da arte em geração de testes via IA.
+2. **Análise de Casos de Uso**:
+   - Identificar e analisar implementações reais em diferentes contextos
+   - Categorizar por tipo de aplicação, escala e domínio
+3. **Estudo Comparativo**: Avaliar métricas de sucesso, desafios e fatores contextuais.
 
 ---
 
 ## 📋 Metodologia
 
 ### **Questões de Pesquisa**
-1. Como a IA Generativa pode automatizar a criação de testes de API?
-2. Quais são os desafios e limitações na auto-geração de testes?
-3. Como melhorar a precisão e abrangência dos testes gerados por IA?
+1. Como a eficácia dos testes gerados por IA varia em diferentes contextos e escalas de aplicação?
+2. Quais fatores contextuais (domínio, tamanho da aplicação, complexidade) influenciam o sucesso da abordagem?
+3. Quais são as melhores práticas e lições aprendidas a partir de implementações reais?
+4. Como se comparam as diferentes ferramentas e abordagens de IA para geração de testes?
 
-### **Métricas de Avaliação**
-| Métrica               | Descrição                                  | Objetivo                    |
-|-----------------------|--------------------------------------------|-----------------------------|
-| **Cobertura**         | % de endpoints e cenários testados         | Maximizar cobertura         |
-| **Precisão**          | Qualidade dos testes gerados               | Minimizar falsos positivos  |
-| **Automatização**     | Nível de intervenção humana necessária     | Reduzir esforço manual      |
-| **Adaptabilidade**    | Capacidade de lidar com diferentes APIs    | Garantir flexibilidade      |
+### **Framework de Análise**
+| Dimensão             | Aspectos a Analisar                         | Métodos de Avaliação          |
+|----------------------|---------------------------------------------|-------------------------------|
+| **Contexto**         | Domínio, escala, complexidade, tecnologias  | Categorização e análise       |
+| **Abordagem**        | Ferramentas, modelos, métodos de geração    | Análise comparativa           |
+| **Eficácia**         | Cobertura, detecção de bugs, qualidade      | Síntese de métricas reportadas|
+| **Desafios**         | Limitações, obstáculos, pontos de falha     | Análise temática              |
+| **Fatores críticos** | Condições de sucesso, pré-requisitos        | Análise de correlação         |
 
-### **Amostra de APIs**
-- Petstore (API simples)
-- GitHub API (complexidade média)
-- API customizada com desafios específicos
+### **Seleção de Casos**
+- **Critérios de inclusão**:
+  - Implementações reais documentadas (artigos, estudos de caso, relatos técnicos)
+  - Diversidade de domínios e escalas
+  - Dados suficientes para análise comparativa
 
-### **Abordagem Experimental**
-1. **Configuração**:
-   - Definir ambiente de teste
-   - Selecionar ferramentas de IA Generativa
-2. **Geração de Testes**:
-   - Utilizar IA para gerar casos de teste automaticamente
-   - Validar e refinar os testes gerados
-3. **Análise**:
-   - Comparar testes gerados com testes manuais
-   - Documentar insights e melhorias
+- **Categorias de contexto**:
+  - Microserviços vs. Aplicações monolíticas
+  - APIs públicas vs. APIs privadas/internas
+  - Diferentes domínios (finanças, saúde, e-commerce, etc.)
+  - Diferentes escalas (startups, empresas médias, grandes corporações)
 
----
+### **Coleta de Dados**
+1. **Fontes Acadêmicas**:
+   - IEEExplore, ACM Digital Library, Springer, Google Scholar
+   - Conferências especializadas (ICST, ISSTA, ASE)
+2. **Fontes da Indústria**:
+   - Blogs técnicos, white papers, relatórios de caso
+   - Repositórios de código aberto com documentação
 
-## 🧰 Tecnologias e Ferramentas
-- **IA Generativa**: 
-  - OpenAI GPT-4
-  - GitHub Copilot
-  - Ferramentas open-source de geração de testes
-- **Linguagens e Frameworks**:
-  - Python (Pytest)
-  - JavaScript (Jest)
-- **Infraestrutura**:
-  - Docker
-  - GitHub Actions (opcional)
-
----
-
-## 🚀 Passos de Implementação
-
-### 1. Preparação do Ambiente
-```bash
-# Configurar ambiente de testes
-docker-compose up -d
-pip install -r requirements.txt
-```
-
-### 2. Geração de Testes com IA
-```python
-# Exemplo simplificado de geração de testes
-import openai
-
-def generate_api_tests(api_spec):
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=[
-            {"role": "system", "content": "Gere casos de teste para a seguinte especificação de API:"},
-            {"role": "user", "content": api_spec}
-        ]
-    )
-    return parse_test_cases(response.choices[0].message.content)
-```
-
-### 3. Execução e Análise
-```bash
-# Executar testes gerados
-pytest tests_generated_by_ai.py
-
-# Gerar relatório de cobertura
-coverage run -m pytest
-coverage report
-```
+### **Abordagem de Análise**
+1. **Análise Qualitativa**:
+   - Identificação de padrões e temas comuns
+   - Extração de lições aprendidas e melhores práticas
+2. **Análise Quantitativa**:
+   - Síntese de métricas reportadas
+   - Correlação entre fatores contextuais e resultados
 
 ---
 
-## 📊 Resultados Esperados
-- Conjunto de testes gerados automaticamente
-- Relatório detalhado de cobertura e qualidade
-- Insights sobre o potencial da IA na geração de testes
+## 📊 Estrutura do Estudo
 
-## 🔍 Desafios e Limitações
-- Precisão da interpretação da especificação da API
-- Cobertura de casos de borda
-- Dependência da qualidade do modelo de IA
+### **1. Revisão do Estado da Arte**
+- Taxonomia de abordagens de geração de testes por IA
+- Evolução histórica e tendências atuais
+- Ferramentas e frameworks disponíveis
 
-## 📝 Próximos Passos
-- Refinamento do processo de geração de testes
-- Exploração de técnicas avançadas de prompt engineering
-- Desenvolvimento de ferramentas de validação específicas
+### **2. Análise de Casos por Contexto**
+- **Pequena Escala**:
+  - Startups e pequenas equipes
+  - Aplicações emergentes
+- **Média Escala**:
+  - Empresas de médio porte
+  - Sistemas com complexidade moderada
+- **Grande Escala**:
+  - Corporações e sistemas corporativos
+  - Arquiteturas complexas e distribuídas
 
-### Considerações Finais
-- Foco na experimentação prática
-- Flexibilidade para ajustes metodológicos
-- Documentação detalhada do processo
+### **3. Análise Temática**
+- **Fatores Técnicos**: Tipos de testes, cobertura, integração contínua
+- **Fatores Humanos**: Aceitação, adaptação, curva de aprendizado
+- **Fatores Organizacionais**: ROI, mudanças de processo, governança
+
+### **4. Comparação de Ferramentas e Abordagens**
+- Abordagens baseadas em LLMs (OpenAI, Claude, LLama)
+- Ferramentas específicas para teste (TestGPT, etc.)
+- Frameworks proprietários vs. open source
 
 ---
 
-## 🤝 Contribuição
-Sinta-se à vontade para contribuir, reportar issues ou sugerir melhorias no repositório.
+## 🔍 Limitações e Considerações
+
+- Dependência da qualidade e disponibilidade de casos documentados
+- Possível viés de publicação (casos bem-sucedidos são mais frequentemente reportados)
+- Evolução rápida do campo pode limitar a validade temporal dos resultados
+
+---
+
+## 📚 Referências Iniciais
+
+1. Watson, C., et al. (2023). "A Systematic Mapping Study on AI-based Test Case Generation."
+2. Zhang, Y., et al. (2022). "Large Language Models for Software Testing: A Systematic Literature Review."
+3. Arcuri, A. (2023). "Can ChatGPT Generate Tests? A Comparative Study."
+4. Almeida, D., et al. (2022). "Testing Microservices with AI: Challenges and Opportunities."
+5. Dias-Neto, A.C., Travassos, G.H. (2009). "Model-based testing approaches selection for software projects."

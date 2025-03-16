@@ -30,7 +30,7 @@ In all your responses:
 Execute a comprehensive literature search on AI-generated tests for REST APIs. 
 
 Follow these steps:
-1. Identify the most relevant academic databases for this topic (IEEE Xplore, ACM Digital Library, etc.)
+1. Identify the most relevant databases for this topic
 2. Create a search query using these keywords: "AI-generated API testing," "LLM automated test generation," "REST API testing automation," "generative AI software testing"
 3. Find 15-20 of the most relevant papers from 2020-2025
 4. For each paper, extract:
@@ -147,77 +147,94 @@ Present your findings as a comprehensive map of the current tool landscape with 
 ### Evaluation Framework Prompt
 
 ```
-Develop a framework for evaluating and comparing AI-based approaches to REST API test generation.
+Develop a theoretical framework for evaluating and comparing AI-based approaches to REST API test generation, based on literature review rather than direct measurements.
 
 Follow these steps:
-1. Define evaluation dimensions:
-   - Effectiveness metrics (coverage, fault detection, etc.)
-   - Efficiency metrics (time, resources, etc.)
-   - Usability aspects
-   - Integration capabilities
-   - Adaptability to different API types
+1. Define evaluation dimensions based on reported findings in literature:
+   - Theoretical effectiveness metrics (potential coverage capabilities, reported bug detection)
+   - Reported efficiency metrics from studies (time, resources, etc.)
+   - Usability aspects mentioned in literature
+   - Integration capabilities described in documentation
+   - Adaptability to different API types as reported in case studies
 
 2. For each dimension, define:
-   - Specific metrics or criteria
-   - Measurement approaches
-   - Importance/weight in overall evaluation
+   - Specific metrics or criteria that can be assessed through literature review
+   - How to standardize varied reporting methods from different sources
+   - Relative importance/weight based on literature consensus
 
-3. Create a scoring system that could be applied consistently across tools
+3. Create a comparative assessment approach that:
+   - Relies on reported results rather than direct measurements
+   - Accounts for differences in reporting methodologies
+   - Identifies patterns across multiple studies
+   - Acknowledges limitations of indirect assessment
 
-4. Design a template for presenting comparative results
+4. Design a template for presenting comparative results that clearly indicates:
+   - Source of information (which study, paper, or documentation)
+   - Confidence level in the comparison
+   - Gaps or inconsistencies in available data
 
-Present the evaluation framework in a structured format with clear dimensions, metrics, and scoring guidelines. Include a sample evaluation template that could be used for any tool comparison.
+Present the evaluation framework in a structured format with clear dimensions and assessment guidelines that can be applied through literature review. Include a sample evaluation template that acknowledges the theoretical nature of the assessment.
 ```
 
-## Phase 4: Case Study Analysis Prompts
+## Phase 4: Literature-Based Case Analysis Prompts
 
-### Case Study Selection Prompt
+### Published Case Selection Prompt
 
 ```
-Develop a strategy for selecting representative case studies to analyze AI-generated tests for REST APIs.
+Develop a strategy for selecting and analyzing published cases of AI-generated tests for REST APIs from existing literature.
 
 Follow these steps:
 1. Based on the classification framework, identify key API profiles that should be represented:
    - Define 3-5 distinct API profiles covering different complexity levels, domains, etc.
-   - For each profile, list the key characteristics
+   - For each profile, list the key characteristics to look for in published cases
 
-2. Establish case study selection criteria:
-   - Availability of documentation
-   - Prior use in testing research
-   - Representativeness of real-world scenarios
-   - Diversity of technical challenges
+2. Establish literature case selection criteria:
+   - Comprehensiveness of reporting
+   - Methodological rigor
+   - Relevance to research questions
+   - Diversity of API contexts
+   - Publication recency and credibility
 
-3. Propose specific candidates for each profile:
-   - Include both open-source and well-documented commercial examples
-   - Consider accessibility for potential hands-on exploration
+3. Search strategy for identifying relevant published cases:
+   - Key journals and conferences to examine
+   - Search terms and filters
+   - Quality assessment criteria
 
-4. Outline a method for analyzing these case studies
+4. Outline a method for systematically analyzing these published cases
 
-Present your selection strategy with profiles, criteria, and specific candidates. Include a justification for each selected case study and how it contributes to answering the research questions.
+Present your selection strategy with profiles, criteria, and search approach. Include a template for how you will extract and organize information from published cases to answer the research questions.
 ```
 
-### Case Study Analysis Prompt
+### Published Case Analysis Prompt
 
 ```
-Analyze the selected case studies to extract insights about AI-generated tests for REST APIs.
+Analyze published cases of AI-generated tests for REST APIs from existing literature.
 
-For each case study:
-1. Apply the classification framework to categorize the API
+For each published case:
+1. Extract and summarize key information:
+   - API context and characteristics
+   - AI approach or tool used
+   - Methodology described
+   - Results reported
+   - Limitations acknowledged
 
-2. Investigate:
-   - Challenges specific to this API type for AI test generation
-   - Approaches that have been successfully applied
+2. Apply the classification framework:
+   - Categorize the API based on reported characteristics
+   - Note any classification challenges due to limited information
+
+3. Analyze reported findings:
+   - Challenges specific to this API type mentioned
+   - Successful approaches described
    - Reported effectiveness and limitations
-   - Contextual factors that influenced outcomes
+   - Contextual factors highlighted by authors
 
-3. Extract patterns and principles:
-   - What worked well in this context?
-   - What didn't work and why?
-   - How do the findings relate to the research questions?
+4. Critically evaluate:
+   - Methodological strengths and weaknesses
+   - Potential biases in reporting
+   - Generalizability of findings
+   - Relevance to research questions
 
-4. Identify transferable lessons
-
-Present a detailed analysis for each case study with clear findings related to the research questions. Include a cross-case synthesis highlighting patterns that emerge across different API types.
+Present a detailed analysis of published cases with systematic extraction of relevant information and critical assessment of findings. Include a cross-case synthesis highlighting patterns that emerge across different published studies.
 ```
 
 ## Phase 5: Synthesis and Reporting Prompts
@@ -279,7 +296,7 @@ Present the decision support model in a visual format with accompanying explanat
 ### Final Report Structure Prompt
 
 ```
-Outline a comprehensive structure for the final research report on AI-generated tests for REST APIs.
+Outline a comprehensive structure for the final research report on AI-generated tests for REST APIs, following the specific structure required by my course:
 
 Create a detailed outline with:
 1. Front matter:
@@ -287,27 +304,89 @@ Create a detailed outline with:
    - Abstract
    - Table of contents
 
-2. Main sections:
-   - Introduction (background, motivation, objectives)
-   - Related Work
-   - Research Methodology
-   - Classification Framework
-   - Tool and Approach Analysis
-   - Case Study Findings
-   - Synthesis and Discussion
-   - Recommendations and Best Practices
-   - Limitations and Future Work
-   - Conclusion
+2. Main sections (following required course structure):
+   - Introduction - Presenting the research context, overview, and significance
+   - Motivation - Including a concrete example of the problem addressed, its limitations, and consequences
+   - Methodology - Clearly describing objectives, research questions, evaluation metrics, sample selection, and data collection approach
+   - Results - Presenting the findings from literature analysis and framework application
+   - Discussion - Analyzing and interpreting the results
+   - Related Work - Reviewing and connecting to existing literature
+   - Conclusion and Future Work - Summarizing key findings and suggesting next steps
 
-3. For each section:
+3. For each required section:
    - Key components and subsections
    - Main points to cover
-   - Visualizations or tables to include
+   - Appropriate visualizations or tables
+   - Connection to research questions
 
 4. Formatting and style guidelines:
    - Academic writing conventions
    - Citation style
    - Table and figure formats
 
-Present a comprehensive report outline with detailed section descriptions and content guidelines. Make it ready to use as a template for report writing.
+Present a comprehensive report outline that strictly follows the required course structure while accommodating the theoretical, literature-based nature of this research. Make it ready to use as a template for report writing.
+```
+
+## Theoretical Analysis Prompts (Instead of Implementation)
+
+### Conceptual Demonstration Prompt
+
+```
+Design a theoretical conceptual demonstration to illustrate how different AI approaches might generate tests for REST APIs without actual implementation.
+
+Follow these steps:
+1. Select 2-3 contrasting API scenarios as thought experiments:
+   - Define a simple API scenario (e.g., basic CRUD operations)
+   - Define a complex API scenario (e.g., with authentication, business logic)
+   - Specify clear characteristics for each scenario
+
+2. For each scenario:
+   - Describe hypothetical test requirements
+   - Explain how different AI approaches would theoretically approach test generation
+   - Highlight expected differences in approach
+   - Identify theoretical strengths and limitations
+
+3. Develop a comparative analysis framework:
+   - Key differentiating factors
+   - Theoretical benefits and drawbacks
+   - Contextual considerations affecting performance
+
+4. Create illustrative examples:
+   - Sample API documentation snippets
+   - How different AI approaches might interpret them
+   - Theoretical test cases that might be generated
+
+Present a well-reasoned theoretical analysis that helps illustrate key concepts without requiring actual implementation. Use examples from literature where available to support theoretical claims.
+```
+
+### Comparative Assessment Prompt
+
+```
+Develop a literature-based comparative assessment of different AI approaches for generating REST API tests.
+
+Follow these steps:
+1. For each major AI approach identified in the literature:
+   - Summarize reported capabilities and limitations
+   - Compile evidence of effectiveness from published studies
+   - Note contextual factors that reportedly affect performance
+   - Identify theoretical strengths and weaknesses
+
+2. Create comparative matrices showing:
+   - How different approaches handle various API characteristics
+   - Reported performance across different contexts
+   - Key differentiating features
+   - Evolution of capabilities over time
+
+3. Analyze patterns and trends:
+   - Contextual factors consistently mentioned across studies
+   - Common challenges regardless of approach
+   - Evolving techniques and solutions
+   - Emerging consensus on best practices
+
+4. Connect findings to research questions:
+   - Synthesize literature evidence for each question
+   - Identify consensus views and contradictory findings
+   - Note gaps in current understanding
+
+Present a comprehensive literature-based assessment with clear comparisons and synthesis of findings. Use tables and conceptual diagrams to illustrate comparisons where appropriate.
 ```

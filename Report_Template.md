@@ -4,12 +4,7 @@
 ## 1. Introduction  
 ### 1.1 Research Context  
 [Overview of REST API testing challenges and the theoretical role of LLMs]  
-[Table: Key LLM Test Generation Paradigms]  
-| Approach | Theoretical Basis | Reported Capabilities |  
-|----------|-------------------|-----------------------|  
-| Zero-shot Prompting | Natural language processing | Schema interpretation |  
-| Few-shot Prompting | Example-based learning | Diverse test case generation |
-| Chain-of-Thought Approach | Structured reasoning | Complex flow coverage |
+[Table: Key LLM Test Generation Paradigms]
 
 ### 1.2 Research Questions  
 [Numbered list of 5 RQs focusing on LLMs]  
@@ -29,11 +24,7 @@
 [Conceptual example: "A healthcare API with HL7/FHIR compliance requirements..."]  
 
 ### 2.2 Limitations of Current LLM Approaches  
-[Table: Literature-Reported Limitations]  
-| LLM Type | Reported Failure Cases | Frequency in Literature |  
-|----------|------------------------|-------------------------|  
-| GPT-3.5/4 | State transition errors | 8/15 studies [2][5][7] |  
-| Open-source LLMs | Complex authentication issues | 6/10 studies [3][9] |
+[Table: Literature-Reported Limitations]
 
 ### 2.3 Academic Significance  
 [Bullet points: Gaps identified in prior surveys on LLMs for testing]  
@@ -52,9 +43,6 @@
 
 ### 3.3 Data Synthesis Approach  
 [Table: Literature Analysis Techniques for LLM Studies]  
-| Research Phase | Method | Output |  
-|----------------|--------|--------|  
-| LLM Comparison | Meta-analysis of 12 studies | Effectiveness heatmap |  
 
 **Guidance:** Reference your classification framework from Phase 2  
 
@@ -63,17 +51,12 @@
 ## 4. Results  
 ### 4.1 Contextual Effectiveness Analysis  
 [Table: Reported Success Rates by API Type using LLMs]  
-| API Profile | Studies | Avg. Coverage | Common Limitations |  
-|-------------|---------|---------------|--------------------|  
-| CRUD | 6 | 78% | State transitions |  
 
 ### 4.2 LLM-based Tool Landscape  
 [Timeline: Evolution of LLM Testing Approaches 2020-2025]  
 
 ### 4.3 Best Practice Patterns  
-[Bullet points: Top 3 literature-derived principles]  
-- Schema annotation improves LLM performance [3][9]  
-- Chain-of-thought prompting outperforms direct approaches [4][12]
+[Bullet points: Literature-derived principles]
 
 **Guidance:** Use subsections mirroring RQs with literature evidence  
 
@@ -84,11 +67,7 @@
 [Conceptual diagram: LLM Testing Effectiveness Spectrum]  
 
 ### 5.2 Practical Recommendations  
-[Table: Stakeholder-Specific Guidance]  
-| Role | Priority Consideration | Literature Basis |  
-|------|------------------------|------------------|  
-| Test Architect | Contract complexity | [4][11] |  
-| Prompt Engineer | Structure for stateful APIs | [7][14] |
+[Table: Stakeholder-Specific Guidance]
 
 ### 5.3 Study Limitations  
 [Numbered list: Constraints of literature-based approach on LLMs]  
@@ -100,11 +79,7 @@
 [Figure: LLM API Testing Evolution Framework]  
 
 ### 6.2 Contemporary Research  
-[Table: Key Papers by Focus Area]  
-| Focus | Seminal Work | Current Trends |  
-|-------|--------------|----------------|  
-| GPT-4 Testing | [8] 2022 | Hybrid approaches [12] |  
-| Claude Testing | [15] 2023 | Contextual specialization [19] |
+[Table: Key Papers by Focus Area]
 
 ---
 

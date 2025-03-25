@@ -28,28 +28,12 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
 4. Como se comparam as diferentes ferramentas e abordagens de IA para geração de testes de APIs REST?
 5. Como os testes gerados por IA se comparam aos testes manuais ou gerados por outras ferramentas específicas para APIs REST?
 
-### **Framework de Análise Teórica**
-| Dimensão             | Aspectos a Analisar                                      | Métodos de Avaliação                       |
-|----------------------|----------------------------------------------------------|-------------------------------------------|
-| **Contexto da API**  | Domínio, escala, complexidade, especificação (REST/OpenAPI) | Categorização e análise de relatos        |
-| **Abordagem**        | Ferramentas, modelos, métodos de geração                 | Análise comparativa de descrições técnicas |
-| **Eficácia Reportada** | Cobertura de endpoints, validação de respostas, segurança | Síntese de métricas relatadas na literatura|
-| **Desafios Comuns**  | Limitações reportadas com APIs complexas, autenticação   | Análise temática de relatos                |
-| **Fatores críticos** | Qualidade da documentação, completude da especificação   | Análise de correlações reportadas          |
-
 ### **Seleção de Casos da Literatura**
 - **Critérios de inclusão**:
   - Estudos de caso bem documentados (artigos, relatórios técnicos)
   - Diversidade de domínios e escalas de APIs REST
   - Dados suficientes para análise comparativa
   - Publicações entre 2020-2025
-
-- **Categorias de contexto a buscar**:
-  - APIs de Microserviços vs. APIs de sistemas monolíticos
-  - APIs públicas vs. APIs privadas/internas
-  - Diferentes tipos de APIs REST (CRUD simples, complexas com lógica de negócio)
-  - Diferentes domínios (finanças, saúde, e-commerce, etc.)
-  - APIs com diferentes níveis de documentação (OpenAPI/Swagger vs. documentação informal)
 
 ### **Coleta de Dados**
 1. **Fontes Acadêmicas**:
@@ -69,77 +53,6 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
 
 ---
 
-## 📊 Estrutura do Estudo
-
-### **1. Revisão do Estado da Arte**
-- Taxonomia de abordagens de geração de testes por IA para APIs REST
-- Evolução histórica do teste de APIs REST e integração com IA
-- Ferramentas específicas para teste de APIs (Postman, REST Assured, Karate) e sua integração com IA
-- Abordagens de especificação (OpenAPI, RAML, API Blueprint) e seu impacto na geração de testes
-
-### **2. Framework de Classificação Contextual**
-- Desenvolvimento de um esquema para classificar APIs REST
-- Dimensões relevantes (complexidade, domínio, arquitetura, documentação)
-- Critérios claros para categorização
-- Validação teórica com exemplos da literatura
-
-### **3. Análise de Casos Documentados**
-- Seleção de casos reportados na literatura
-- Aplicação do framework de classificação
-- Extração sistemática de informações relevantes
-- Síntese de padrões entre casos
-
-### **4. Análise Temática**
-- **Fatores Técnicos**: 
-  - Tipos de testes para APIs REST (funcional, segurança, performance, contrato)
-  - Cobertura de endpoints, métodos HTTP e códigos de status reportados
-  - Integração com pipelines CI/CD e DevOps
-- **Fatores Humanos**: 
-  - Aceitação por testadores e desenvolvedores de API
-  - Adaptação de práticas de documentação 
-- **Fatores Organizacionais**: 
-  - ROI reportado em comparação com abordagens tradicionais
-  - Mudanças em processos de desenvolvimento de APIs
-
-### **5. Comparação de Ferramentas e Abordagens**
-- **Abordagens baseadas em modelos de linguagem**:
-  - Uso de LLMs (OpenAI, Claude, LLama) para geração de testes de API
-  - Estratégias de prompt engineering para teste de APIs REST
-  - Processamento de documentação OpenAPI por LLMs
-- **Ferramentas específicas**:
-  - Integrações de IA com Postman, Swagger, REST Assured
-  - Ferramentas dedicadas à geração de testes de API
-  - Frameworks proprietários vs. open source para teste de APIs com IA
-
----
-
-## 📝 Produtos Esperados
-
-### **1. Framework de Classificação Contextual**
-- Taxonomia de APIs REST relevante para teste com IA
-- Critérios de categorização
-
-### **2. Framework de Avaliação Teórico**
-- Dimensões de avaliação baseadas em literatura
-- Critérios para comparação entre abordagens
-- Modelo para síntese de resultados reportados
-
-### **3. Catálogo de Padrões de Sucesso**
-- Padrões recorrentes identificados na literatura
-- Anti-padrões e desafios comuns
-- Estratégias de mitigação documentadas
-
-### **4. Modelo de Suporte à Decisão**
-- Framework para seleção de abordagens por contexto
-- Árvores de decisão baseadas em evidências da literatura
-- Orientações práticas para implementação
-
-### **5. Artigo Científico/Relatório Técnico**
-- Seguindo a estrutura exigida: Introdução, Motivação, Metodologia, Resultados, Discussão, Trabalhos Relacionados, Conclusão e Trabalhos Futuros
-- Análise crítica e contribuições para o campo
-
----
-
 ## 🔍 Limitações e Considerações
 
 - **Limitações da Abordagem Teórica**:
@@ -151,19 +64,6 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
   - Inclusão de fontes diversificadas (acadêmicas e da indústria)
   - Busca ativa por relatos de desafios e limitações
   - Framework de análise que reconhece limitações e níveis de confiança
-
----
-
-## 📚 Referências Iniciais
-
-1. Atlidakis, V., et al. (2019). "Restler: Stateful rest api fuzzing." *ICSE*.
-2. Arcuri, A. (2022). "EvoMaster: Evolutionary Multi-context Automated System Test Generator." *IEEE TSE*.
-3. Ed-douibi, H., et al. (2018). "Automatic generation of test cases for REST APIs: a specification-based approach."
-4. Martin-Lopez, A., et al. (2021). "Test case generation for REST APIs using GPT models: an empirical study."
-5. Watson, C., et al. (2023). "A Systematic Mapping Study on AI-based Test Case Generation for RESTful APIs."
-6. Zhang, Y., et al. (2022). "Large Language Models for API Testing: A Systematic Literature Review."
-7. Cambridge, N., et al. (2023). "Prompt Engineering for REST API Test Generation." *ASE*.
-8. Brant, E., et al. (2024). "Large Language Models in API Testing: Bridging Specification and Implementation." *ICSE*.
 
 ---
 

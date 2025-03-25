@@ -90,7 +90,6 @@ Seguindo os requisitos específicos da disciplina, o relatório final terá a se
 
 4. **Resultados**
    - Achados da revisão sistemática
-   - Framework de classificação desenvolvido
    - Padrões identificados em casos documentados
    - Comparação entre abordagens e ferramentas
 

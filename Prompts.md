@@ -3,13 +3,14 @@
 ## Prompt Inicial para Busca Literária
 
 ```
-Help to execute the first phase of our research as specified in the report template and research plan. Generate the output without in-text citations. Include a references list at the end with all sources used. Execute a comprehensive literature search on LLM-generated tests for REST APIs. Follow these steps:
+We are executing a comprehensive literature search on LLM-generated tests for REST APIs. Your mission is to make a first-review and help me structure findings in the papers we selected. Follow these steps:
 
-1. Identify the most relevant databases for this topic
-2. Create a search query using these keywords: "LLM API testing," "GPT generated API tests," "language model REST API testing," "large language models testing automation"
-3. Find 15-20 of the most relevant papers from 2020-2025
-4. For each paper, extract:
-   - Title, authors, publication venue, and year
+For each paper, extract (1 column for each topic below):
+   - Title 
+   - Authors 
+   - Publication venue
+   - Link to access the paper
+   - Year
    - Key findings related to my research questions
    - Methodologies used
    - Types of APIs studied

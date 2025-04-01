@@ -2,7 +2,7 @@
 
 ## 📌 Objetivo
 Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de testes gerados por IA especificamente para APIs REST em diferentes contextos e escalas de aplicações**, baseado em revisão sistemática da literatura e análise de casos documentados. O foco é:
-- Analisar casos de uso e implementações reportadas em literatura científica e técnica
+- Analisar casos de uso e implementações reportadas em literatura científica
 - Comparar abordagens, ferramentas e resultados em diferentes contextos
 - Avaliar vantagens, limitações e fatores críticos de sucesso
 
@@ -13,8 +13,7 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
 ### **Visão Geral**
 1. **Revisão Sistemática da Literatura**: Mapear o estado da arte em geração de testes via IA para APIs REST.
 2. **Análise de Casos Documentados**:
-   - Identificar e analisar implementações reportadas em literatura acadêmica e técnica
-   - Categorizar por tipo de aplicação, escala e domínio
+   - Identificar e analisar implementações reportadas em literatura acadêmica
 3. **Estudo Comparativo Teórico**: Avaliar métricas de sucesso, desafios e fatores contextuais reportados.
 
 ---
@@ -32,28 +31,30 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
 - **Critérios de inclusão**:
   - Estudos de caso bem documentados (artigos, relatórios técnicos)
   - Diversidade de domínios e escalas de APIs REST
-  - Dados suficientes para análise comparativa
   - Publicações entre 2020-2025
 
 ### **Coleta de Dados**
-1. **Fontes Acadêmicas**:
-   - IEEExplore, ACM Digital Library, Springer, Google Scholar
-   - Conferências especializadas (ICST, ISSTA, ASE)
-2. **Fontes da Indústria**:
-   - Blogs técnicos, white papers, relatórios de caso
-   - Documentação de ferramentas e frameworks
+- **Fontes Acadêmicas**:
+   - IEEExplore, ACM Digital Library, ScienceDirect
 
 ### **Abordagem de Análise**
-1. **Análise Qualitativa**:
-   - Identificação de padrões e temas comuns
-   - Extração de lições aprendidas e melhores práticas
-2. **Análise Quantitativa Indireta**:
-   - Síntese de métricas reportadas em estudos
-   - Padronização de resultados para comparação
 
 ---
 
-## 🔍 Limitações e Considerações
+## 🔍 Busca
+
+- **Strings de Busca**
+
+   - [IEEE](https://ieeexplore.ieee.org/search/searchresult.jsp?action=search&matchBoolean=true&newsearch=true&queryText=((%22software%20testing%22%20OR%20%22test%20automation%22%20OR%20%22automated%20testing%22%20OR%20%22test%20generation%22)%20AND%20(%22REST%20API%22%20OR%20%22RESTful%20API%22%20OR%20%22web%20API%22)%20AND%20(%22artificial%20intelligence%22%20OR%20%22AI%22%20OR%20%22machine%20learning%22%20OR%20%22LLM%22%20OR%20%22generative%20AI%22%20OR%20%22ChatGPT%22))) - `("software testing" OR "test automation" OR "automated testing" OR "test generation") AND ("REST API" OR "RESTful API" OR "web API") AND ("artificial intelligence" OR "AI" OR "machine learning" OR "LLM" OR "generative AI" OR "ChatGPT")`
+
+   - [ACM](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&expand=dl&field1=AllField&text1=%28%22software+testing%22+OR+%22test+automation%22+OR+%22automated+testing%22+OR+%22test+generation%22%29+AND+%28%22REST+API%22+OR+%22RESTful+API%22+OR+%22web+API%22%29+AND+%28%22artificial+intelligence%22+OR+%22AI%22+OR+%22machine+learning%22+OR+%22large+language+model%22+OR+%22LLM%22+OR+%22generative+AI%22+OR+%22ChatGPT%22%29&AfterMonth=1&AfterYear=2020&BeforeMonth=12&BeforeYear=2025&startPage=&ContentItemType=research-article) - `("software testing" OR "test automation" OR "automated testing" OR "test generation") AND ("REST API" OR "RESTful API" OR "web API") AND ("artificial intelligence" OR "AI" OR "machine learning" OR "large language model" OR "LLM" OR "generative AI" OR "ChatGPT")`
+
+   - [ScienceDirect](https://www.sciencedirect.com/search?tak=%28%22software%20testing%22%20OR%20%22test%20automation%22%29%20AND%20%28%22REST%20API%22%20OR%20%22web%20API%22%29%20AND%20%28%22artificial%20intelligence%22%20OR%20%22machine%20learning%22%20OR%20%22LLM%22%20OR%20%22generative%20AI%22%29&date=2020-2025) - `("software testing" OR "test automation") AND ("REST API" OR "web API") AND ("artificial intelligence" OR "machine learning" OR "LLM" OR "generative AI")`
+
+
+---
+
+## Limitações e Considerações
 
 - **Limitações da Abordagem Teórica**:
   - Dependência da qualidade e completude dos relatos na literatura

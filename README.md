@@ -8,7 +8,7 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
 
 ---
 
-## 🔍 Proposta de Pesquisa
+## 🔬 Proposta de Pesquisa
 
 ### **Visão Geral**
 1. **Revisão Sistemática da Literatura**: Mapear o estado da arte em geração de testes via IA para APIs REST.
@@ -56,7 +56,7 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
 
 ---
 
-## Limitações e Considerações
+## 🚧 Limitações e Considerações
 
 - **Limitações da Abordagem Teórica**:
   - Dependência da qualidade e completude dos relatos na literatura

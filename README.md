@@ -1,4 +1,16 @@
-# Projeto: Estudo Comparativo de Testes Gerados por IA para APIs REST em Diferentes Contextos de Aplicações
+# Estudo Comparativo de Testes Gerados por IA para APIs REST em Diferentes Contextos de Aplicações
+
+## 👥 Artefatos
+
+- [Acesse aqui o Artigo em PDF](./arquivos/Artigo.pdf)
+- [Acesse aqui a Apresentação](./arquivos/Artigo.pdf)
+- [Baixe aqui a Planilha de Coleta de Dados](./arquivos/Planilha_de_Coleta_de_Dados.xlsx)
+
+## 👤 Autores
+
+- [Lucas Florencio de Sousa](lfs@cin.ufpe.br)
+- [João Pedro Veloso](jpsmlv@cin.ufpe.br)
+- [Lucas Leandro da Silva](lls3@cin.ufpe.br)
 
 ## 📌 Objetivo
 Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de testes gerados por IA especificamente para APIs REST em diferentes contextos e escalas de aplicações**, baseado em revisão sistemática da literatura e análise de casos documentados. O foco é:
@@ -21,11 +33,9 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
 ## 📋 Metodologia
 
 ### **Questões de Pesquisa**
-1. Como a eficácia dos testes gerados por IA para APIs REST varia em diferentes contextos e escalas de aplicação?
-2. Quais fatores contextuais (domínio, tamanho da API, complexidade do contrato) influenciam o sucesso da abordagem?
-3. Quais são as melhores práticas e lições aprendidas a partir de implementações reais de testes automatizados de APIs REST via IA?
-4. Como se comparam as diferentes ferramentas e abordagens de IA para geração de testes de APIs REST?
-5. Como os testes gerados por IA se comparam aos testes manuais ou gerados por outras ferramentas específicas para APIs REST?
+1. Quais fatores contextuais da API que influenciam o sucesso da implementação?
+2. Como a eficácia dos testes gerados por IA para APIs REST varia em diferentes contextos e escalas de aplicação?
+3. Como os testes gerados por IA se comparam aos testes manuais ou de outras ferramentas específicas para APIs REST?
 
 ### **Seleção de Casos da Literatura**
 - **Critérios de inclusão**:
@@ -69,44 +79,3 @@ Realizar um **estudo comparativo teórico sobre a eficácia e aplicabilidade de 
   - Framework de análise que reconhece limitações e níveis de confiança
 
 ---
-
-## 👥 Estrutura do Relatório Final
-
-Seguindo os requisitos específicos da disciplina, o relatório final terá a seguinte estrutura:
-
-1. **Introdução**
-   - Contextualização do tema
-   - Relevância e motivação
-   - Visão geral da pesquisa
-
-2. **Motivação**
-   - Exemplo concreto do problema abordado
-   - Limitações das abordagens atuais
-   - Consequências dessas limitações
-
-3. **Metodologia**
-   - Objetivo do estudo
-   - Questões de pesquisa detalhadas
-   - Métricas de avaliação teórica
-   - Estratégia de seleção da amostra literária
-   - Abordagem de coleta e análise de dados
-
-4. **Resultados**
-   - Achados da revisão sistemática
-   - Padrões identificados em casos documentados
-   - Comparação entre abordagens e ferramentas
-
-5. **Discussão**
-   - Interpretação dos resultados
-   - Implicações para prática e teoria
-   - Conexões entre diferentes achados
-
-6. **Trabalhos Relacionados**
-   - Posicionamento em relação à literatura existente
-   - Avanços recentes na área
-   - Lacunas na pesquisa atual
-
-7. **Conclusão e Trabalhos Futuros**
-   - Síntese das contribuições
-   - Limitações do estudo
-   - Direções para pesquisas futuras
